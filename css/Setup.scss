@@ -1,0 +1,89 @@
+$sr:50;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    width: 100%;
+    height: 100%;
+    body{
+        @extend html;
+        background: #f4f4f4;
+        
+         header{
+            width: 750/$sr+rem;
+            height: 130/$sr+rem;
+            background:#148ad2 ;
+            display: flex;
+
+
+            
+            div{
+                width:30/$sr+rem;
+                height:30/$sr+rem;
+                border: solid 1px red;
+                transform: rotate(45deg);
+                border-color: transparent transparent white white;
+                margin-left: 20/$sr+rem;
+                margin-top: 56/$sr+rem;
+            }
+            span{
+                display: block;
+                height: 36/$sr+rem;
+                text-align: center;
+                line-height: 36/$sr+rem;
+                margin: 54/$sr+rem auto;
+                font-size: 42/$sr+rem;
+                color: white;
+                padding-right:50/$sr+rem;
+            }
+        }
+        section{
+            width: 100%;
+            ul{
+                width: 100%;
+                margin-top: 22/$sr+rem;
+                font-size: 30/$sr+rem;
+                color: #333;
+                line-height:104/$sr+rem; ;
+                
+                li{
+                    width: 100%;
+                    height: 104/$sr+rem;
+                    background: white;
+                    margin-bottom: 1px;
+                    padding-left:76/$sr+rem;
+                    padding-right:24/$sr+rem;
+                    box-sizing: border-box;
+                    display: flex;
+                   justify-content:space-between;
+                   align-items: center;
+                  }
+                  .xz{
+                      width:80/$sr+rem ;
+                      height: 40/$sr+rem;
+                      border-radius: 20/$sr+rem;
+                      background: #148AD2;
+                      position: relative;
+                      border: solid 1px gray;
+                      p{
+                          position: absolute;
+                          width: 40/$sr+rem;
+                          height: 40/$sr+rem;
+                          border-radius:20/$sr+rem;
+                          background: #fff;
+                          right: 0;
+                          border: solid 1px grey;
+                          bottom: -1px;
+
+                      }
+                  }
+               }   
+        }
+        
+       
+       
+        
+    }
+}

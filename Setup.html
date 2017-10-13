@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+		<link rel="stylesheet" href="css/Setup.css" />
+	    <script src="js/ku.js"></script>
+		<title></title>
+		<script>
+			document.documentElement.style.fontSize=innerWidth/15+"px"
+			window.onload=function(){
+//				var 
+				var di=document.getElementsByClassName("di")
+				var xz=document.getElementsByClassName("xz")
+				var n=1
+				xz[0].addEventListener("touchstart",function(){
+					n++
+					if(n%2==0){
+					    di[0].style.left=0;
+						xz[0].style.background="#fff"
+					}else{
+						  di[0].style.cssText="left"
+						  xz[0].style.background="#148AD2"
+					}
+					
+				})
+				xz[1].addEventListener("touchstart",function(){
+					n++
+					if(n%2==0){
+					    di[1].style.left=0;
+						xz[1].style.background="#fff"
+					}else{
+						  di[1].style.cssText="left"
+						  xz[1].style.background="#148AD2"
+					}
+					
+				})
+				
+				
+			}
+			
+		</script>
+	</head>
+	<body>
+		<header> <div></div><span>设置</span> </header>
+		<section>
+				<ul>
+					<li><div>仅WIFI下载图片</div> <div class="xz"><p class="di"></p></div> </li>
+					<li><div>仅WIFI自动播放视频</div> <div class="xz"><p class="di"></p></div></li>
+				</ul>
+			
+		</section>
+		<footer></footer>
+	</body>
+</html>
