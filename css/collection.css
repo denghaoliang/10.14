@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url("../collection/iconfont.eot");
+  src: url("../collection/iconfont.eot?#iefix") format("embedded-opentype"), url("../collection/iconfont.woff") format("woff"), url("../collection/iconfont.ttf") format("truetype"), url("../collection/iconfont.svg#iconfont") format("svg"); }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html, html body {
+  width: 100%;
+  height: 100%; }
+  html body header {
+    width: 100%;
+    height: 2.6rem;
+    background: #148ad2;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding-top: 1.2rem;
+    box-sizing: border-box;
+    color: white; }
+    html body header div {
+      margin-top: 0.16rem;
+      width: 0.44rem;
+      height: 0.44rem;
+      border: solid 1px white;
+      transform: rotate(45deg);
+      border-color: transparent transparent white white;
+      margin-left: 0.4rem; }
+    html body header p {
+      font-size: 0.72rem; }
+    html body header span {
+      margin-top: 0.16rem;
+      font-size: 0.6rem;
+      margin-right: 1.28rem; }
+  html body nav {
+    width: 100%;
+    height: 1.56rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    html body nav div {
+      flex: 1;
+      text-align: center;
+      color: #333;
+      font-size: 0.66rem; }
+      html body nav div:nth-child(1) {
+        color: #148AD2; }
+  html body section {
+    width: 100%;
+    background: #f4f4f4; }
+    html body section ul {
+      background: url(../img/m1.jpg) no-repeat;
+      background-size: 4.52rem 3.6rem;
+      padding-left: 0.4rem;
+      padding-right: 0.4rem;
+      background-position: 0.4rem 0.4rem;
+      height: 4.44rem;
+      border-bottom: solid 1px #e6e6e6; }
+    html body section li {
+      padding-left: 5.4rem;
+      list-style: none;
+      font-size: 0.66rem;
+      line-height: 1.2rem;
+      padding-top: 0.4rem;
+      display: flex; }
+      html body section li div {
+        float: left; }
+        html body section li div:nth-child(2) {
+          margin-left: 1.2rem;
+          float: right; }
+        html body section li div:nth-child(3) {
+          float: right; }
+    html body section #ziti div span {
+      font-size: 0.38rem;
+      padding: 0.04rem 0.06rem; }
+    html body section ol {
+      list-style: none;
+      width: 100%;
+      padding-left: 0.4rem;
+      padding-right: 0.4rem; }
+      html body section ol li {
+        padding: 0;
+        display: flex; }
+        html body section ol li img {
+          display: block;
+          width: 4.52rem;
+          height: 3.6rem;
+          margin-right: 0.24rem; }
+
+/*# sourceMappingURL=collection.css.map */
