@@ -51,7 +51,7 @@ html, html body {
         html body section ul .xz {
           width: 1.6rem;
           height: 0.8rem;
-          border-radius: 0.4rem;
+          border-radius: 0.8rem;
           background: #148AD2;
           position: relative;
           border: solid 1px gray; }
@@ -59,10 +59,36 @@ html, html body {
             position: absolute;
             width: 0.8rem;
             height: 0.8rem;
-            border-radius: 0.4rem;
+            border-radius: 0.8rem;
             background: #fff;
             right: 0;
             border: solid 1px grey;
             bottom: -1px; }
+        html body section ul .slide {
+          width: 8.4rem;
+          height: 0.12rem;
+          border-radius: 0.12rem;
+          background: #e6e6e6;
+          position: relative; }
+        html body section ul .color {
+          width: 0;
+          height: 100%;
+          background: #1588d9;
+          position: absolute; }
+        html body section ul .ball {
+          left: 0;
+          display: block;
+          width: 0.48rem;
+          height: 0.48rem;
+          border-radius: 50%;
+          background: #1588D9;
+          position: absolute;
+          top: -0.18rem; }
+        html body section ul .b {
+          position: absolute;
+          left: 0;
+          top: -0.3rem; }
+          html body section ul .b:nth-of-type(2) {
+            left: 6.8rem; }
 
 /*# sourceMappingURL=Setup.css.map */

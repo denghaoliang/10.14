@@ -4,8 +4,10 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
 		<link rel="stylesheet" href="css/Setup.css" />
-	    <script src="js/ku.js"></script>
+	    <!--<script src="js/ku.js"></script>-->
 		<title></title>
+	     <script type="text/javascript" src="js/zepto.js" ></script>
+		 <script type="text/javascript" src="js/touch.js" ></script>
 		<script>
 			document.documentElement.style.fontSize=innerWidth/15+"px"
 			window.onload=function(){
@@ -37,7 +39,33 @@
 				})
 				
 				
+				
+				
+				var slide=document.getElementsByClassName("slide")
+				var color=document.getElementsByClassName("color")
+				var ball=document.getElementsByClassName("ball")
+				var b=document.getElementsByClassName("b")
+				slide[0].addEventListener("touchmove",function(e){
+					    e.preventDefault()
+					    var slideL=this.offsetLeft
+                        var x=e.touches[0].clientX-slideL
+                        var slideW=slide[0].offsetWidth-ball[0].offsetWidth
+                        console.log(slideL)
+                        if(x<0){x=0}
+                        if(x>slideW){x=slideW}
+                        color[0].style.width=x+"px"
+                        ball[0].style.left=x+"px"   
+                        b[0].innerHTML=Math.ceil(x/slideW*100)+"%"  
+                        b[1].innerHTML=100-Math.ceil(x/slideW*100)+"%" 
+				})
+				
+				
 			}
+//			$(function(){
+//					$(".color").on("click",function(){
+//						alert("a")
+//					})
+//				})
 			
 		</script>
 	</head>
@@ -47,6 +75,11 @@
 				<ul>
 					<li><div>仅WIFI下载图片</div> <div class="xz"><p class="di"></p></div> </li>
 					<li><div>仅WIFI自动播放视频</div> <div class="xz"><p class="di"></p></div></li>
+				</ul>
+				
+				<ul>
+					<li><div>正文字号</div> <div class="slide"><p class="color"></p><span class="ball"></span> <b class="b">0</b><b class="b">100%</b></div>  </li>
+					<li><div>屏幕亮度</div></li>
 				</ul>
 			
 		</section>

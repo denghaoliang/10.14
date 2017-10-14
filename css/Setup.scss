@@ -63,7 +63,7 @@ html{
                   .xz{
                       width:80/$sr+rem ;
                       height: 40/$sr+rem;
-                      border-radius: 20/$sr+rem;
+                      border-radius: 40/$sr+rem;
                       background: #148AD2;
                       position: relative;
                       border: solid 1px gray;
@@ -71,7 +71,7 @@ html{
                           position: absolute;
                           width: 40/$sr+rem;
                           height: 40/$sr+rem;
-                          border-radius:20/$sr+rem;
+                          border-radius:40/$sr+rem;
                           background: #fff;
                           right: 0;
                           border: solid 1px grey;
@@ -79,6 +79,42 @@ html{
 
                       }
                   }
+                  
+                  .slide{
+                      width: 420/$sr+rem;
+                      height: 6/$sr+rem;
+                      border-radius: 6/$sr+rem;
+                      background:#e6e6e6;
+                      position: relative;
+                    
+                  }
+                  .color{
+                      width: 0;
+                      height: 100%;
+                      background: #1588d9;
+                      position: absolute;
+                      
+                  }
+                  .ball{
+                      left: 0;
+                      display: block;
+                      width: 24/$sr+rem;
+                      height: 24/$sr+rem;
+                      border-radius: 50%;
+                      background: #1588D9;
+                      position: absolute;
+                      top: -9/$sr+rem;
+                  }
+                  .b{
+                      position: absolute;
+                      left: 0;
+                      top:-15/$sr+rem ;
+                      &:nth-of-type(2){
+                         left: 340/$sr+rem;
+//                       right: 0/$sr+rem;
+                      }
+                    }
+                  
                }   
         }
         
