@@ -100,17 +100,17 @@ html, html body {
           html body section ul .slidea i {
             position: absolute;
             display: block;
-            width: 1.6rem;
-            height: 0.8rem;
+            width: 2rem;
+            height: 1rem;
             font-style: normal;
             color: #fff;
             background-color: #148AD2;
             left: 6.92rem;
-            top: -0.3rem;
+            top: -0.44rem;
             bottom: 0;
-            border-radius: 0.8rem;
-            font-size: 0.36rem;
-            line-height: 0.8rem;
+            border-radius: 1rem;
+            font-size: 0.56rem;
+            line-height: 1rem;
             text-align: center; }
         html body section ul .colora {
           width: 100%;
@@ -126,5 +126,21 @@ html, html body {
           background: #1588D9;
           position: absolute;
           top: -0.18rem; }
+        html body section ul .sj {
+          width: 0.6rem;
+          height: 0.6rem;
+          border: solid 1px gray;
+          transform: rotate(45deg);
+          border-color: gray gray transparent transparent; }
+    html body footer {
+      width: 10rem;
+      height: 1.72rem;
+      border-radius: 0.2rem;
+      color: #fff;
+      font-size: 0.8rem;
+      text-align: center;
+      margin: 2.2rem auto;
+      background: #1588D9;
+      line-height: 1.72rem; }
 
 /*# sourceMappingURL=Setup.css.map */

@@ -64,39 +64,68 @@
 				var colora=document.getElementsByClassName("colora")
 				var balla=document.getElementsByClassName("balla")
 				var i=document.getElementsByClassName("i")
+				var v=0
+			
+					
 				
 				
-			    var v=0
+			    
 				i[0].addEventListener("touchstart",function(){
 					var slideaL=slidea[0].offsetLeft
 					var ballaL=balla[0].offsetLeft+slideaL
 					var x=ballaL-slideaL
-					console.log(slideaL)
-					console.log(ballaL)
+                    var slideaW=slidea[0].offsetWidth-balla[0].offsetWidth
+					
+//					console.log(ballaL)
                     v++
                     if(v%2==0){
+                    	if(x*2>slideaW){x=slideaW/2}
                     colora[0].style.width=x*2+"px"
                     balla[0].style.left=x*2+"px"
                         i[0].innerHTML="自动"
                         i[0].style.color="#fff"
+                        i[0].setAttribute("id","0")
+                        
                     }else{
 					    colora[0].style.width=x/2+"px"
 	                    balla[0].style.left=x/2+"px" 
 	                    i[0].innerHTML="手动"
                         i[0].style.color="yellow"
-	                    
-                    }
+                        i[0].setAttribute("id","1")
+				     }
 				
-				})
+
+				if(i[0].id=="1"){
+				   		slidea[0].addEventListener("touchmove",function deng(e){
+				   	    console.log("a")
+				        e.preventDefault()
+					    var slideaL=this.offsetLeft
+                        var x=e.touches[0].clientX-slideaL
+                        var slideaW=slidea[0].offsetWidth-balla[0].offsetWidth
+                        if(x<0){x=0}
+                        if(x>slideaW){x=slideaW}
+                        colora[0].style.width=x+"px"
+                        balla[0].style.left=x+"px" 
+                       
+				   })
+				}
+//				slidea[0].attachEvent("touchmove",deng, false);
 				
+
+
+                 
 				
-			}
+		})
+				
+			
+				
+			
 //			$(function(){
 //					$(".color").on("click",function(){
 //						alert("a")
 //					})
 //				})
-			
+				}
 		</script>
 	</head>
 	<body>
@@ -110,9 +139,15 @@
 				<ul>
 					<li><div>正文字号</div> <div class="slide"><p class="color"></p><span class="ball"></span> <b class="b">0</b><b class="b">100%</b></div>  </li>
 					<li><div>屏幕亮度</div><div class="slidea"><p class="colora"></p><span class="balla"></span><i class="i">自动</i>  </div></li>
+					<li><div>清除缓存</div></li>
+				</ul>
+				
+				<ul>
+					<li><div>版本更新</div> <div>1.0.0</div> </li>
+					<li><div>关于我们</div> <div class="sj"></div> </li>
 				</ul>
 			
 		</section>
-		<footer></footer>
+		<footer>退出登录</footer>
 	</body>
 </html>

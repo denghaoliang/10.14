@@ -126,17 +126,17 @@ html{
                           
                          position: absolute;
                          display: block; 
-                         width: 80/$sr+rem;
-                         height: 40/$sr+rem;
+                         width: 100/$sr+rem;
+                         height: 50/$sr+rem;
                          font-style:normal;
                          color: #fff;
                          background-color: #148AD2;
                          left: 346/$sr+rem;
-                         top: -15/$sr+rem; 
+                         top: -22/$sr+rem; 
                          bottom: 0;
-                         border-radius: 40/$sr+rem ;
-                         font-size: 18/$sr+rem;
-                         line-height:40/$sr+rem ;
+                         border-radius: 50/$sr+rem ;
+                         font-size: 28/$sr+rem;
+                         line-height:50/$sr+rem ;
                          text-align: center;
                       }
                     
@@ -157,27 +157,27 @@ html{
                       background: #1588D9;
                       position: absolute;
                       top: -9/$sr+rem;
+                  }
+                  .sj{
+                      width: 30/$sr+rem;
+                      height: 30/$sr+rem;
+                      border: solid 1px gray;
+                      transform: rotate(45deg);
+                      border-color: gray gray transparent transparent;
                   }  
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
+ 
                }   
+        }
+        footer{
+            width: 500/$sr+rem;
+            height: 86/$sr+rem;
+            border-radius: 10/$sr+rem;
+            color: #fff;
+            font-size: 40/$sr+rem;
+            text-align: center;
+            margin: 110/$sr+rem auto;
+            background: #1588D9;
+            line-height: 86/$sr+rem;
         }
         
        
