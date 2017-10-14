@@ -86,7 +86,8 @@ html, html body {
       list-style: none;
       width: 100%;
       padding-left: 0.4rem;
-      padding-right: 0.4rem; }
+      padding-right: 0.4rem;
+      border-bottom: solid 1px #e6e6e6; }
       html body section ol li {
         padding: 0;
         display: flex; }
@@ -95,5 +96,17 @@ html, html body {
           width: 4.52rem;
           height: 3.6rem;
           margin-right: 0.24rem; }
+    html body section ul:nth-of-type(2) {
+      background: url(../img/m5.jpg) no-repeat;
+      background-size: 4.52rem 3.6rem;
+      padding-left: 0.4rem;
+      padding-right: 0.4rem;
+      background-position: 0.4rem 0.4rem; }
+    html body section ul:nth-of-type(3) {
+      background: url(../img/m6.jpg) no-repeat;
+      background-size: 4.52rem 3.6rem;
+      padding-left: 0.4rem;
+      padding-right: 0.4rem;
+      background-position: 0.4rem 0.4rem; }
 
 /*# sourceMappingURL=collection.css.map */
