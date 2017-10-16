@@ -36,7 +36,8 @@ html, html body {
       border-color: transparent transparent white white;
       margin-left: 0.4rem; }
     html body header p {
-      font-size: 0.72rem; }
+      font-size: 0.72rem;
+      margin-left: 0.8rem; }
     html body header span {
       margin-top: 0.16rem;
       font-size: 0.6rem;
