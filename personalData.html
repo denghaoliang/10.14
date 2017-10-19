@@ -11,8 +11,7 @@
 	</head>
 	<body>
 		<header>
-          <div></div>
-          <span>个人资料</span>
+		<iframe width="420" scrolling="no" height="60" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=12&color=%23FFFF00&icon=1&num=3&site=19"></iframe>
 		</header>
 		<section>
 			<ul>
@@ -31,5 +30,23 @@
 			</ul>
 			<ul>
 		</section>
+		<script type="text/javascript">
+      window.loadGadget = function () {
+        var codeUrl = 'http://ext.weather.com.cn/8888.js'
+        var containerID = 'gadgetContainer'
+        var s = document.createElement('script')
+        s.type = 'text/javascript'
+        s.src = codeUrl + '?target=' + containerID
+        document.body.appendChild(s)
+      }
+      if(window.onload) {
+        var f = window.onload
+        window.onload = function () {
+          f()    
+          window.loadGadget()
+        }
+      }
+      else window.onload = window.loadGadget
+    </script>
 	</body>
 </html>
